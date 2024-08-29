@@ -26,13 +26,13 @@ const Navbar = () => {
           <nav className="offcanvas-nav">
             <ul className="offcanvas-nav__list">
               <li className="offcanvas-nav__item">
-                <a href="#" className="offcanvas-nav__link">Home</a>
+                <a href="/Home" className="offcanvas-nav__link">Home</a>
               </li>
               <li className="offcanvas-nav__item">
-                <a href="#" className="offcanvas-nav__link">About</a>
+                <a href="" className="offcanvas-nav__link">About</a>
               </li>
               <li className="offcanvas-nav__item">
-                <a href="#" className="offcanvas-nav__link">Portfolio</a>
+                <a href="/Our-Portfolio" className="offcanvas-nav__link">Portfolio</a>
               </li>
               <li className="offcanvas-nav__item">
                 <a href="#" className="offcanvas-nav__link">Contact</a>

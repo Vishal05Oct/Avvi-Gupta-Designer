@@ -1,0 +1,67 @@
+// src/Portfolio.js
+import React from 'react';
+import './Portfolio.css'; // Import the CSS file for styling
+import Navbar from '../Navbar/Navbar';
+
+// Import images
+import bannerImage from '../../Assets/Images/Banner1.jpg'; // Adjust the path to your banner image
+import project1 from '../../Assets/Images/Shanti.png';
+import project2 from '../../Assets/Images/Shanti.png';
+import project3 from '../../Assets/Images/Shanti.png';
+import project4 from '../../Assets/Images/Shanti.png';
+import project5 from '../../Assets/Images/Shanti.png';
+import project6 from '../../Assets/Images/Shanti.png';
+import project7 from '../../Assets/Images/Shanti.png';
+import project8 from '../../Assets/Images/Shanti.png';
+import project9 from '../../Assets/Images/Shanti.png';
+import project10 from '../../Assets/Images/Shanti.png';
+import project11 from '../../Assets/Images/Shanti.png';
+import project12 from '../../Assets/Images/Shanti.png';
+
+// Define project data with imported images
+const projects = [
+  { title: 'Modern Villa', location: 'Miami, USA', description: 'A luxury modern villa with a sleek design.', image: project1 },
+  { title: 'Urban Apartment', location: 'New York, USA', description: 'Contemporary urban apartment in the heart of NYC.', image: project2 },
+  { title: 'Eco-Friendly House', location: 'Vancouver, Canada', description: 'A sustainable and eco-friendly residential project.', image: project3 },
+  { title: 'Corporate Office', location: 'Tokyo, Japan', description: 'An innovative and modern office space for a tech company.', image: project4 },
+  { title: 'Luxury Hotel', location: 'Paris, France', description: 'A five-star luxury hotel in the heart of Paris.', image: project5 },
+  { title: 'Beachfront Villa', location: 'Malibu, USA', description: 'An exclusive villa overlooking the Pacific Ocean.', image: project6 },
+  { title: 'Historical Renovation', location: 'Rome, Italy', description: 'Restoration of a historic building in central Rome.', image: project7 },
+  { title: 'Luxury Penthouse', location: 'London, UK', description: 'A top-floor penthouse with panoramic views.', image: project8 },
+  { title: 'Commercial Complex', location: 'Dubai, UAE', description: 'A futuristic commercial complex in downtown Dubai.', image: project9 },
+  { title: 'Suburban Home', location: 'Sydney, Australia', description: 'A spacious suburban family home with modern amenities.', image: project10 },
+  { title: 'Resort Hotel', location: 'Bali, Indonesia', description: 'A tropical resort hotel with luxurious accommodations.', image: project11 },
+  { title: 'Cultural Center', location: 'Berlin, Germany', description: 'A cultural center that blends modern and traditional design.', image: project12 },
+];
+
+const Portfolio = () => {
+  return (
+    <div>
+        <Navbar/>
+    <div className="portfolio-container">
+      {/* Banner Section */}
+      <div className="banner-section">
+        <img src={bannerImage} alt="Banner" className="banner-image" />
+      </div>
+
+      {/* Portfolio Section */}
+      <h1 className="portfolio-title">Our Portfolio</h1>
+      <p className="portfolio-subtitle">Discover our latest architectural masterpieces</p>
+      <div className="portfolio-grid">
+        {projects.map((project, index) => (
+          <div className="portfolio-item" key={index}>
+            <img src={project.image} alt={project.title} className="portfolio-image" />
+            <div className="portfolio-info">
+              <h2 className="portfolio-title">{project.title}</h2>
+              <p className="portfolio-location">{project.location}</p>
+              <p className="portfolio-description">{project.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    </div>
+  );
+};
+
+export default Portfolio;
