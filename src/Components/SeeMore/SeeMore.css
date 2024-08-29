@@ -1,0 +1,144 @@
+/* Banner Image */
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+}
+
+/* Project Info */
+.project-info {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* Secondary Banner Image */
+.banner.secondary img {
+    height: 400px;
+}
+
+/* Short Description */
+.short-description {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.short-description p {
+    font-size: 1.2em;
+    color: #444;
+    margin: 0;
+}
+
+/* Portfolio Grid */
+.portfolio {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+.grid-item:hover {
+    transform: scale(1.03);
+}
+.portfolio {
+   
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 1rem;
+    font-style: italic;
+}
