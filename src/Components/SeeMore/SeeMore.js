@@ -1,5 +1,6 @@
 import React from 'react';
 import './SeeMore.css'; // Your CSS file
+import Navbar from '../Navbar/Navbar';
 
 // Importing images
 import Banner1 from './../../Assets/Images/Banner1.jpg';
@@ -16,6 +17,7 @@ import P8 from '../../Assets/Images/Portfolio/P8.jpg';
 const SeeMore = () => {
   return (
     <div>
+      <Navbar />
       {/* Banner Image */}
       <section className="banner">
         <img src={Banner1} alt="Project Banner" />
