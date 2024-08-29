@@ -1,0 +1,26 @@
+/* src/Logo.css */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 15px; /* Adjust as needed */
+  }
+  
+  .logo {
+    max-width: 73px; /* Adjust to your preferred logo size */
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 73px; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      max-width: 73px; /* Further adjust for very small screens */
+    }
+  }
+  

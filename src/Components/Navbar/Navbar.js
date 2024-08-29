@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Ensure this path is correct
+import Logo from '../Logo/Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,10 @@ const Navbar = () => {
   };
 
   return (
+    <div>
+    
     <div className="header">
+    <Logo/>
       <div className="header-row row">
         <button className="hamburger-toggle" onClick={toggleOffcanvas}>
           <span className="hamburger-menu">
@@ -49,6 +53,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
