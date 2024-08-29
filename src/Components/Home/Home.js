@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Home.css';
+import Navbar from './../Navbar/Navbar';
 import img2 from './../../Assets/Images/img2.jpg';
 import img3 from './../../Assets/Images/img3.jpg';
 import img4 from './../../Assets/Images/img4.jpg';
@@ -38,6 +39,8 @@ const ImageSlider = () => {
   };
 
   return (
+    <div>
+    <Navbar/>
     <div className="slider">
       <div className="list" ref={sliderRef}>
         {images.map((image, index) => (
@@ -94,6 +97,7 @@ const ImageSlider = () => {
         <button className="prev" onClick={() => moveSlider('prev')}>&lt;</button>
         <button className="next" onClick={() => moveSlider('next')}>&gt;</button>
       </div>
+    </div>
     </div>
   );
 };
