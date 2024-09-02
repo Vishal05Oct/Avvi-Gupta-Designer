@@ -166,7 +166,7 @@ a{
     to{
         transform: translateY(0px);
         filter: blur(0px);
-        opacity: 1;
+        opacity:1;
     }
 }
 .slider .list .item:nth-child(1) .content .title{
@@ -248,7 +248,7 @@ a{
 }
 @keyframes outFrame{
     to{
-        width: 150px;
+        width: 150px; 
         height: 220px;
         bottom: 50px;
         left: 50%;

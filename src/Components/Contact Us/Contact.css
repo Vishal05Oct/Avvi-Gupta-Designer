@@ -1,126 +1,124 @@
-/* Contact Us Page */
-.contact-us-container {
-    background-color: #f9f9f9;
+/* General Layout */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
   }
   
-  .contact-banner {
-    position: relative;
+  /* Banner Image Styling */
+  .banner-container {
     width: 100%;
-    height: 400px;
+    height: 500px; /* Adjust height as needed */
     overflow: hidden;
   }
   
-  .contact-banner-image {
+  .banner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  /* Content Layout */
+  .content-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .banner-title {
-    color: #fff;
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin: 0;
-  }
-  
-  .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-  }
-  
-  .contact-form,
-  .contact-info {
+    padding: 50px;
     background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 48%;
-    margin-bottom: 20px;
   }
   
-  .contact-form h2,
-  .contact-info h2 {
-    font-size: 2em;
+  /* Left Section Styling */
+  .left-section {
+    flex: 1;
+  }
+  
+  .left-section h2 {
     margin-bottom: 20px;
+    margin-top: -4px;
+    background: linear-gradient(70deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ensure text is visible with gradient background */
+    font-family: 'RedHatDisplayBold', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
     color: #333;
+    font-size: 1.75rem; /* Adjusted from 28px to rem for consistency */
   }
   
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.1em;
-    color: #666;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1em;
-  }
-  
-  .submit-btn {
-    background-color: #333;
+  /* Map Button Styling */
+  .map-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #000;
     color: #fff;
-    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.56rem; /* Adjusted from 25px to rem for consistency */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
   }
   
-  .submit-btn:hover {
-    background-color: #555;
+  .map-button:hover {
+    background-color: #444;
   }
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .contact-form,
-    .contact-info {
-      width: 100%;
-    }
-    
-    .contact-title {
-      font-size: 2em;
-    }
+  /* Right Section Styling */
+  .right-section {
+    flex: 1;
   }
   
-  @media (max-width: 480px) {
-    .contact-banner {
-      height: 300px;
-    }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
   
-    .contact-title {
-      font-size: 1.8em;
-    }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem; /* Adjusted from 16px to rem for consistency */
+  }
   
-    .contact-form,
-    .contact-info {
-      padding: 20px;
-    }
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-button {
+    background-color: #4c4cfa;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.125rem; /* Adjusted from 18px to rem for consistency */
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #3b3bd1;
+  }
+  
+  /* India Text Styling */
+  .india-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5625rem; /* Adjusted from 25px to rem for consistency */
+  }
+  
+  /* Contact Information Styling */
+  .contact-no a,
+  .email a {
+    font-size: 1.5625rem; /* Adjusted from 25px to rem for consistency */
+    color: #000;
+    text-decoration: none; /* Ensure links are not underlined */
+  }
+  
+  /* Add hover effect to contact links if needed */
+  .contact-no a:hover,
+  .email a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
   }
   

@@ -13,6 +13,7 @@ const ImageSlider = () => {
     { src: img4, title: 'MAGIC SLIDER', type: 'PLANT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img3, title: 'MAGIC SLIDER', type: 'NATURE', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false }
   ]);
+  
 
   const sliderRef = useRef(null);
   const thumbnailRef = useRef(null);
@@ -20,84 +21,83 @@ const ImageSlider = () => {
   const moveSlider = (direction) => {
     const sliderList = sliderRef.current;
     const thumbnail = thumbnailRef.current;
-  
-    if (direction === 'next') {
-      sliderList.classList.add('next');
-      setTimeout(() => {
+
+    if (!sliderList || !thumbnail) return;
+
+    sliderList.classList.add(direction);
+
+    setTimeout(() => {
+      if (direction === 'next') {
         sliderList.appendChild(sliderList.firstChild);
         thumbnail.appendChild(thumbnail.firstChild);
-        sliderList.classList.remove('next');
-      }, 500); // Match the timeout to your animation duration
-    } else {
-      sliderList.classList.add('prev');
-      setTimeout(() => {
+      } else {
         sliderList.prepend(sliderList.lastChild);
         thumbnail.prepend(thumbnail.lastChild);
-        sliderList.classList.remove('prev');
-      }, 500); // Match the timeout to your animation duration
-    }
+      }
+      sliderList.classList.remove(direction);
+    }, 500); // Match the timeout to your animation duration
   };
 
   return (
     <div>
-    <Navbar/>
-    <div className="slider">
-      <div className="list" ref={sliderRef}>
-        {images.map((image, index) => (
-          <div className="item" key={index}>
-            {image.isVideo ? (
-              <video 
-                src={image.src} 
-                muted 
-                loop 
-                autoPlay 
-                playsInline
-                className="video-slide"
-              />
-            ) : (
-              <img src={image.src} alt="" />
-            )}
-            <div className="content">
-              <div className="title">{image.title}</div>
-              <div className="type">{image.type}</div>
-              <div className="description">{image.description}</div>
-              {/* Conditionally render the SEE MORE button only if it's not a video */}
-              {!image.isVideo && (
-                <div className="see-more">
-                  <a href={image.seeMoreLink} className="see-more-btn">
-                    SEE MORE
-                  </a>
-                </div>
+      <Navbar/>
+      <div className="slider">
+        <div className="list" ref={sliderRef}>
+          {images.map((image, index) => (
+            <div className="item" key={index}>
+              {image.isVideo ? (
+                <video 
+                  src={image.src} 
+                  muted 
+                  loop 
+                  autoPlay 
+                  playsInline
+                  className="video-slide"
+                />
+              ) : (
+                <img src={image.src} alt="" />
+              )}
+              <div className="content">
+                <div className="title">{image.title}</div>
+                <div className="type">{image.type}</div>
+                <div className="description">{image.description}</div>
+                {/* Conditionally render the SEE MORE button only if it's not a video */}
+                {!image.isVideo && (
+                  <div className="see-more">
+                    <a href={image.seeMoreLink} className="see-more-btn">
+                      SEE MORE
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="thumbnail" ref={thumbnailRef}>
+          {images.map((image, index) => (
+            <div className="item" key={index}>
+              {image.isVideo ? (
+                <video 
+                  src={image.src} 
+                  muted 
+                  loop 
+                  autoPlay 
+                  playsInline
+                  className="thumbnail-video"
+                />
+              ) : (
+                <img src={image.src} alt="" />
               )}
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="thumbnail" ref={thumbnailRef}>
-        {images.map((image, index) => (
-          <div className="item" key={index}>
-            {image.isVideo ? (
-              <video 
-                src={image.src} 
-                muted 
-                loop 
-                autoPlay 
-                playsInline
-                className="thumbnail-video"
-              />
-            ) : (
-              <img src={image.src} alt="" />
-            )}
-          </div>
-        ))}
+        <div className="nextPrevArrows">
+          <button className="prev" onClick={() => moveSlider('prev')}>&lt;</button>
+          <button className="next" onClick={() => moveSlider('next')}>&gt;</button>
+        </div>
       </div>
-
-      <div className="nextPrevArrows">
-        <button className="prev" onClick={() => moveSlider('prev')}>&lt;</button>
-        <button className="next" onClick={() => moveSlider('next')}>&gt;</button>
-      </div>
-    </div>
     </div>
   );
 };
