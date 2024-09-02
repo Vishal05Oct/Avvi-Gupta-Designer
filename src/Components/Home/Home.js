@@ -14,28 +14,34 @@ const ImageSlider = () => {
     { src: img3, title: 'MAGIC SLIDER', type: 'NATURE', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false }
   ]);
   
-
+const slider = document.querySelector('.slider')
+const sliderList = slider.querySelector('.slider .list')
+const thumbnail = document.querySelector('.slider .thumbnail')
+const thumbnailItems = thumbnail.querySelectorAll('.item')
   const sliderRef = useRef(null);
   const thumbnailRef = useRef(null);
 
   const moveSlider = (direction) => {
-    const sliderList = sliderRef.current;
-    const thumbnail = thumbnailRef.current;
+    const sliderItems = sliderList.querySelectorAll('.item')
+    const thumbnailItems = document.querySelectorAll('.thumbnail .item')
+    if(direction === 'next'){
+      sliderList.appendChild(sliderItems[0])
+      thumbnail.appendChild(thumbnailItems[0])
+      slider.classList.add('next')
+  } else {
+      sliderList.prepend(sliderItems[sliderItems.length - 1])
+      thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
+      slider.classList.add('prev')
+  }
 
-    if (!sliderList || !thumbnail) return;
 
-    sliderList.classList.add(direction);
-
-    setTimeout(() => {
-      if (direction === 'next') {
-        sliderList.appendChild(sliderList.firstChild);
-        thumbnail.appendChild(thumbnail.firstChild);
+  slider.addEventListener('animationend', function() {
+      if(direction === 'next'){
+          slider.classList.remove('next')
       } else {
-        sliderList.prepend(sliderList.lastChild);
-        thumbnail.prepend(thumbnail.lastChild);
+          slider.classList.remove('prev')
       }
-      sliderList.classList.remove(direction);
-    }, 500); // Match the timeout to your animation duration
+  }, {once: true})
   };
 
   return (
