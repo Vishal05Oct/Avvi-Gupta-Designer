@@ -7,50 +7,51 @@ import img4 from './../../Assets/Images/img4.jpg';
 import videoSrc from './../../Assets/Videos/interiors.mp4'; // Path to your video file
 
 const ImageSlider = () => {
-  const [images] = useState([
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
     { src: videoSrc, isVideo: true },
     { src: img2, title: 'MAGIC SLIDER', type: 'NATURE', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img4, title: 'MAGIC SLIDER', type: 'PLANT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img3, title: 'MAGIC SLIDER', type: 'NATURE', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false }
-  ]);
-  
-const slider = document.querySelector('.slider')
-const sliderList = slider.querySelector('.slider .list')
-const thumbnail = document.querySelector('.slider .thumbnail')
-const thumbnailItems = thumbnail.querySelectorAll('.item')
-  const sliderRef = useRef(null);
-  const thumbnailRef = useRef(null);
+  ];
 
-  const moveSlider = (direction) => {
+  const slider = document.querySelector('.slider')
+  const sliderList = slider.querySelector('.slider .list')
+  const thumbnail = document.querySelector('.slider .thumbnail')
+
+
+  function moveSlider(direction) {
     const sliderItems = sliderList.querySelectorAll('.item')
     const thumbnailItems = document.querySelectorAll('.thumbnail .item')
+    
     if(direction === 'next'){
-      sliderList.appendChild(sliderItems[0])
-      thumbnail.appendChild(thumbnailItems[0])
-      slider.classList.add('next')
-  } else {
-      sliderList.prepend(sliderItems[sliderItems.length - 1])
-      thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
-      slider.classList.add('prev')
-  }
+        sliderList.appendChild(sliderItems[0])
+        thumbnail.appendChild(thumbnailItems[0])
+        slider.classList.add('next')
+    } else {
+        sliderList.prepend(sliderItems[sliderItems.length - 1])
+        thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
+        slider.classList.add('prev')
+    }
 
 
-  slider.addEventListener('animationend', function() {
-      if(direction === 'next'){
-          slider.classList.remove('next')
-      } else {
-          slider.classList.remove('prev')
-      }
-  }, {once: true})
-  };
+    slider.addEventListener('animationend', function() {
+        if(direction === 'next'){
+            slider.classList.remove('next')
+        } else {
+            slider.classList.remove('prev')
+        }
+    }, {once: true}) // Remove the event listener after it's triggered once
+}
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="slider">
-        <div className="list" ref={sliderRef}>
+        <div className="list">
           {images.map((image, index) => (
-            <div className="item" key={index}>
+            <div className={`item ${index === currentIndex ? 'active' : ''}`} key={index}>
               {image.isVideo ? (
                 <video 
                   src={image.src} 
@@ -80,9 +81,9 @@ const thumbnailItems = thumbnail.querySelectorAll('.item')
           ))}
         </div>
 
-        <div className="thumbnail" ref={thumbnailRef}>
+        <div className="thumbnail">
           {images.map((image, index) => (
-            <div className="item" key={index}>
+            <div className={`item ${index === currentIndex ? 'active' : ''}`} key={index}>
               {image.isVideo ? (
                 <video 
                   src={image.src} 
