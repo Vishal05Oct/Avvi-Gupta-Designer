@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import bannerImage from '../../Assets/Images/Banner2.jpg';
 import aboutImage from '../../Assets/Images/Renovations.jpg';
 import './About.css';
@@ -37,10 +38,7 @@ const AboutUs = () => {
           <div className="about-us-text">
             <h2>About Our Company</h2>
             <p>
-              We are a cutting-edge architecture design firm dedicated to transforming ideas into reality.
-              Our mission is to create spaces that inspire and resonate with those who experience them.
-              With a commitment to innovation and excellence, our team of experts works tirelessly
-              to deliver projects that exceed expectations.
+            We provide Interior and architecture consultancy involves providing expert advice and services in designing and planning spaces. This includes both interior design—focused on aesthetics, functionality, and layout of indoor spaces—and architecture, which encompasses the overall structure, form, and external appearance of buildings. Consultants in this field work with clients to understand their needs and preferences, create design concepts, and oversee the implementation of those designs to ensure they meet both aesthetic and functional requirements. Their work can range from residential and commercial spaces to public buildings and urban planning projects.
             </p>
             <p>
               From residential to commercial projects, we take pride in our ability to understand
@@ -57,24 +55,25 @@ const AboutUs = () => {
         <h2>Our Services</h2>
         <div className="services-container">
           <div className="service-box">
-            <h3>Residential Design</h3>
-            <p>We create unique and personalized residential spaces that reflect your lifestyle and taste.</p>
+            <h3>Interior Design Services</h3>
+            <p>Space Planning: Arranging furniture and elements to optimize functionality and flow.</p>
           </div>
           <div className="service-box">
-            <h3>Commercial Design</h3>
-            <p>Our commercial designs are innovative, functional, and tailored to meet business needs.</p>
+            <h3>Concept Development</h3>
+            <p>Creating a vision for the interior design, including color schemes, materials, and finishes.</p>
           </div>
           <div className="service-box">
-            <h3>Landscape Design</h3>
-            <p>We design sustainable and aesthetically pleasing landscapes that blend with the environment.</p>
+            <h3>Design Schemes</h3>
+            <p>Developing detailed design plans, including furniture, fixtures, and equipment.</p>
           </div>
           <div className="service-box">
-            <h3>Interior Design</h3>
-            <p>Our interior design solutions are both functional and visually striking, tailored to your needs.</p>
+            <h3>Material and Finish Selection </h3>
+            <p>Choosing materials and finishes that align with the design vision and practical needs.</p>
           </div>
         </div>
       </div>
     </motion.div>
+    <Footer />
     </div>
   );
 };

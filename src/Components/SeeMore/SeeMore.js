@@ -1,6 +1,7 @@
 import React from 'react';
 import './SeeMore.css'; // Your CSS file
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 // Importing images
 import Banner1 from './../../Assets/Images/Banner1.jpg';
@@ -117,6 +118,7 @@ const SeeMore = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

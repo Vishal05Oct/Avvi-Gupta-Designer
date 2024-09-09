@@ -1,0 +1,37 @@
+.socialMedia {
+    height: 35x;
+    width: 35px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 240, 240);
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    margin-top: 20px;
+  
+  }
+  .social-media-icon {
+    padding: 5px;
+    margin-left: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.5s; 
+    margin: revert; 
+  }
+  
+  .social-media-icon:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2) ; 
+  }
+  
+  @media only screen and (max-width: 625px) {
+    .social-media-icon{
+      filter: grayscale(0%);
+    }
+}
+  

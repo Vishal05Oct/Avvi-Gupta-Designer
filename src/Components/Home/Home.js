@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'; // Ensure CSS transitions are defined here
 import Navbar from './../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import img2 from './../../Assets/Images/img2.jpg';
 import img3 from './../../Assets/Images/img3.jpg';
 import img4 from './../../Assets/Images/img4.jpg';
@@ -121,6 +122,7 @@ const ImageSlider = () => {
           <button className="next" onClick={() => moveSlider('next')}>&gt;</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

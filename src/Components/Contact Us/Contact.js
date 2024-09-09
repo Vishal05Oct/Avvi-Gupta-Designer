@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import bannerImage from '../../Assets/Images/contact banner.jpg'; // Replace with the correct path to your image
 
 const ContactPage = () => {
@@ -40,6 +41,7 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    <Footer />
     </div>
   );
 };

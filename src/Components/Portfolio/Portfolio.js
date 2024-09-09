@@ -2,6 +2,7 @@
 import React from 'react';
 import './Portfolio.css'; // Import the CSS file for styling
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 // Import images
 import bannerImage from '../../Assets/Images/Banner1.jpg'; // Adjust the path to your banner image
@@ -37,29 +38,30 @@ const projects = [
 const Portfolio = () => {
   return (
     <div>
-        <Navbar/>
-    <div className="portfolio-container">
-      {/* Banner Section */}
-      <div className="banner-section">
-        <img src={bannerImage} alt="Banner" className="banner-image" />
-      </div>
+      <Navbar />
+      <div className="portfolio-container">
+        {/* Banner Section */}
+        <div className="banner-section">
+          <img src={bannerImage} alt="Banner" className="banner-image" />
+        </div>
 
-      {/* Portfolio Section */}
-      <h1 className="portfolio-title">Our Portfolio</h1>
-      <p className="portfolio-subtitle">Discover our latest architectural masterpieces</p>
-      <div className="portfolio-grid">
-        {projects.map((project, index) => (
-          <div className="portfolio-item" key={index}>
-            <img src={project.image} alt={project.title} className="portfolio-image" />
-            <div className="portfolio-info">
-              <h2 className="portfolio-title">{project.title}</h2>
-              <p className="portfolio-location">{project.location}</p>
-              <p className="portfolio-description">{project.description}</p>
+        {/* Portfolio Section */}
+        <h1 className="portfolio-heading">Our Portfolio</h1>
+        <p className="portfolio-subtitle">Discover our latest architectural masterpieces</p>
+        <div className="portfolio-grid">
+          {projects.map((project, index) => (
+            <div className="portfolio-item" key={index}>
+              <img src={project.image} alt={project.title} className="portfolio-image" />
+              <div className="portfolio-info">
+                <h2 className="portfolio-item-title">{project.title}</h2>
+                <p className="portfolio-location">{project.location}</p>
+                <p className="portfolio-description">{project.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
     </div>
   );
 };
