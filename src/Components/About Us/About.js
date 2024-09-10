@@ -55,20 +55,91 @@ const AboutUs = () => {
         <h2>Our Services</h2>
         <div className="services-container">
           <div className="service-box">
-            <h3>Interior Design Services</h3>
-            <p>Space Planning: Arranging furniture and elements to optimize functionality and flow.</p>
+            <h3>Concept Design </h3>
+            <p>Developing initial design ideas and architectural concepts.</p>
+          </div>
+          <div className="service-box">
+            <h3>Schematic Design</h3>
+            <p>Creating detailed plans and drawings for the layout and structure of a project.</p>
+          </div>
+          <div className="service-box">
+            <h3>Design Development</h3>
+            <p>Refining design details and materials, including structural, mechanical, and electrical systems.</p>
+          </div>
+          <div className="service-box">
+            <h3>Construction Documents</h3>
+            <p>Producing detailed drawings and specifications for construction.</p>
+          </div>
+          <div className="service-box">
+            <h3>Construction Documents</h3>
+            <p>Producing detailed drawings and specifications for construction.</p>
+          </div>
+          <div className="service-box">
+            <h3>Construction Documents</h3>
+            <p>Producing detailed drawings and specifications for construction.</p>
+          </div>
+          <div className="service-box">
+            <h3>Project Management</h3>
+            <p>Overseeing the construction process, coordinating with contractors, and ensuring project milestones are met.</p>
+          </div>
+          <div className="service-box">
+            <h3>Construction Documents</h3>
+            <p>Producing detailed drawings and specifications for construction.</p>
+          </div>
+          <div className="service-box">
+            <h3>Feasibility Studies</h3>
+            <p>Analyzing project viability and cost estimates.</p>
+          </div>
+          <div className="service-box">
+            <h3>Site Analysis </h3>
+            <p>Assessing the site for its potential and constraints.</p>
+          </div>
+        </div>
+      </div>
+      <div className="services-section">
+      <h2 style={{ marginTop: '-123px' }}>Interior Design Services</h2>        <div className="services-container">
+          <div className="service-box">
+            <h3>Space Planning</h3>
+            <p>Arranging furniture and elements to optimize functionality and flow.</p>
           </div>
           <div className="service-box">
             <h3>Concept Development</h3>
-            <p>Creating a vision for the interior design, including color schemes, materials, and finishes.</p>
+            <p>Creating a vision for the interior design, including color schemes, materials, and finishes.            </p>
           </div>
           <div className="service-box">
             <h3>Design Schemes</h3>
             <p>Developing detailed design plans, including furniture, fixtures, and equipment.</p>
           </div>
           <div className="service-box">
-            <h3>Material and Finish Selection </h3>
-            <p>Choosing materials and finishes that align with the design vision and practical needs.</p>
+            <h3>Material and Finish Selection</h3>
+            <p>Choosing materials and finishes that align with the design vision and practical needs.
+            </p>
+          </div>
+          <div className="service-box">
+            <h3>Lighting Design</h3>
+            <p> Designing lighting plans to enhance the atmosphere and functionality of spaces.
+            </p>
+          </div>
+          <div className="service-box">
+            <h3>Furniture and Decor</h3>
+            <p> Selecting and sourcing furniture, artwork, and other decorative elements.
+            </p>
+          </div>
+          <div className="service-box">
+            <h3>Project Management</h3>
+            <p>Overseeing the construction process, coordinating with contractors, and ensuring project milestones are met.</p>
+          </div>
+          <div className="service-box">
+            <h3>Construction Documents</h3>
+            <p>Producing detailed drawings and specifications for construction.</p>
+          </div>
+          <div className="service-box">
+            <h3>Feasibility Studies</h3>
+            <p>Analyzing project viability and cost estimates.</p>
+          </div>
+          <div className="service-box">
+            <h3>Site Analysis </h3>
+            <p>Assessing the site for its potential and constraints.</p>
           </div>
         </div>
       </div>
