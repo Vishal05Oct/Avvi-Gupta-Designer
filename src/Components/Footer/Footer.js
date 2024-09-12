@@ -16,9 +16,6 @@ function Footer() {
             <img className="socialMedia social-media-icon" src={instagram} alt="Instagram Icon"></img>
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <img className="socialMedia social-media-icon" src={twitter} alt="Twitter Icon"></img>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
             <img className="socialMedia social-media-icon" src={linkedin} alt="LinkedIn Icon"></img>
           </a>
         </div>
