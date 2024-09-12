@@ -5,7 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 // Import images
-import bannerImage from '../../Assets/Images/Banner1.jpg'; // Adjust the path to your banner image
+import bannerImage from '../../Assets/Images/Portfolio- Banner.png'; // Adjust the path to your banner image
 import project1 from '../../Assets/Images/Shanti.png';
 import project2 from '../../Assets/Images/Shanti.png';
 import project3 from '../../Assets/Images/Shanti.png';

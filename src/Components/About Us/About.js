@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import bannerImage from '../../Assets/Images/Banner2.jpg';
-import aboutImage from '../../Assets/Images/Renovations.jpg';
+import bannerImage from '../../Assets/Images/About Banner.png';
+import aboutImage from '../../Assets/Images/About- Our Company.png';
 import './About.css';
 
 const AboutUs = () => {

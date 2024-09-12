@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import bannerImage from '../../Assets/Images/contact banner.jpg'; // Replace with the correct path to your image
+import bannerImage from '../../Assets/Images/Contact- us Banner - 1894627.png'; // Replace with the correct path to your image
 
 const ContactPage = () => {
   return (

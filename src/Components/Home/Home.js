@@ -2,17 +2,31 @@ import React, { useState, useEffect } from 'react';
 import './Home.css'; // Ensure CSS transitions are defined here
 import Navbar from './../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import img2 from './../../Assets/Images/img2.jpg';
-import img3 from './../../Assets/Images/img3.jpg';
-import img4 from './../../Assets/Images/img4.jpg';
+import img1 from './../../Assets/Images/First Banner.jpg';
+import img2 from './../../Assets/Images/Slider Images/2.jpg';
+import img3 from './../../Assets/Images/Slider Images/3.jpg';
+import img4 from './../../Assets/Images/Slider Images/4.jpg';
+import img5 from './../../Assets/Images/Slider Images/5.jpg';
+import img6 from './../../Assets/Images/Slider Images/6.jpg';
+import img7 from './../../Assets/Images/Slider Images/7.jpg';
+import img8 from './../../Assets/Images/Slider Images/8.jpg';
+import img9 from './../../Assets/Images/Slider Images/9.jpg';
+import img10 from './../../Assets/Images/Slider Images/10.jpg';
 import videoSrc from './../../Assets/Videos/interiors.mp4';
 
 const ImageSlider = () => {
   const images = [
     { src: videoSrc, isVideo: true },
-    { src: img2, title: 'MAGIC SLIDER', type: 'Golden Image', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
-    { src: img4, title: 'MAGIC SLIDER', type: 'White Building', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
-    { src: img3, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false }
+    { src: img1, title: 'MAGIC SLIDER', type: 'Golden Image', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img2, title: 'MAGIC SLIDER', type: 'White Building', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img3, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img4, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img5, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img6, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img7, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img8, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img9, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
+    { src: img10, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
