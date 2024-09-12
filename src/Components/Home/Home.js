@@ -13,10 +13,12 @@ import img8 from './../../Assets/Images/Slider Images/8.jpg';
 import img9 from './../../Assets/Images/Slider Images/9.jpg';
 import img10 from './../../Assets/Images/Slider Images/10.jpg';
 import videoSrc from './../../Assets/Videos/interiors.mp4';
+import videoSrc1 from './../../Assets/Videos/Avvi Gupta.mp4';
 
 const ImageSlider = () => {
   const images = [
     { src: videoSrc, isVideo: true },
+    { src: videoSrc1, isVideo: true },
     { src: img1, title: 'MAGIC SLIDER', type: 'Golden Image', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img2, title: 'MAGIC SLIDER', type: 'White Building', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img3, title: 'MAGIC SLIDER', type: 'Sketch', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.', seeMoreLink: '/SeeMore', isVideo: false },
