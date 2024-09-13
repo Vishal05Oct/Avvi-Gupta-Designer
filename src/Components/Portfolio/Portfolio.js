@@ -20,16 +20,16 @@ import project10 from '../../Assets/Images/Slider Images/10.jpg';
 
 // Define project data with imported images
 const projects = [
-  { title: 'Modern Villa', location: 'Miami, USA', description: 'A luxury modern villa with a sleek design.', image: project1 },
-  { title: 'Urban Apartment', location: 'New York, USA', description: 'Contemporary urban apartment in the heart of NYC.', image: project2 },
-  { title: 'Eco-Friendly House', location: 'Vancouver, Canada', description: 'A sustainable and eco-friendly residential project.', image: project3 },
-  { title: 'Corporate Office', location: 'Tokyo, Japan', description: 'An innovative and modern office space for a tech company.', image: project4 },
-  { title: 'Luxury Hotel', location: 'Paris, France', description: 'A five-star luxury hotel in the heart of Paris.', image: project5 },
-  { title: 'Beachfront Villa', location: 'Malibu, USA', description: 'An exclusive villa overlooking the Pacific Ocean.', image: project6 },
-  { title: 'Historical Renovation', location: 'Rome, Italy', description: 'Restoration of a historic building in central Rome.', image: project7 },
-  { title: 'Luxury Penthouse', location: 'London, UK', description: 'A top-floor penthouse with panoramic views.', image: project8 },
-  { title: 'Commercial Complex', location: 'Dubai, UAE', description: 'A futuristic commercial complex in downtown Dubai.', image: project9 },
-  { title: 'Suburban Home', location: 'Sydney, Australia', description: 'A spacious suburban family home with modern amenities.', image: project10 },
+  { title: 'BABINA BAR', location: '', description: '', image: project1 },
+  { title: 'ANAND MANGAL', location: '', description: '', image: project2 },
+  { title: 'ANURAG SONI PRESENTATION', location: '', description: '', image: project3 },
+  { title: 'FERN SN PETEL', location: '', description: '', image: project4 },
+  { title: 'GEHNA JEWELLERS', location: '', description: '', image: project5 },
+  { title: 'KRISSH INTERRIORS', location: '', description: '', image: project6 },
+  { title: 'LA PINOZ', location: '', description: '', image: project7 },
+  { title: 'MANOJ JEWELLERS', location: '', description: '', image: project8 },
+  { title: 'NANKANI', location: '', description: '', image: project9 },
+  { title: 'OLD TOWN CAFE', location: '', description: '', image: project10 },
 ];
 
 const Portfolio = () => {
