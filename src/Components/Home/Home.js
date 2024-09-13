@@ -14,6 +14,7 @@ import img9 from './../../Assets/Images/Slider Images/9.jpg';
 import img10 from './../../Assets/Images/Slider Images/10.jpg';
 // import videoSrc from './../../Assets/Videos/interiors.mp4';
 import videoSrc1 from './../../Assets/Videos/Avvi Gupta.mp4';
+import { Link } from 'react-router-dom';
 
 const ImageSlider = () => {
   const images = [
@@ -27,7 +28,8 @@ const ImageSlider = () => {
     { src: img7, title: '', type: 'LA PINOZ', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img8, title: '', type: 'MANOJ JEWELLERS', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img9, title: '', type: 'NANKANI', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },
-    { src: img10, title:'', type: 'OLD TOWN CAFE', description:'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },  ];
+    { src: img10, title:'', type: 'OLD TOWN CAFE', description:'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false }, 
+   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState('');

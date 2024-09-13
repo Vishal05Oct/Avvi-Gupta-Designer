@@ -6,18 +6,17 @@ import Footer from '../Footer/Footer';
 
 // Import images
 import bannerImage from '../../Assets/Images/Portfolio- Banner.png'; // Adjust the path to your banner image
-import project1 from '../../Assets/Images/Shanti.png';
-import project2 from '../../Assets/Images/Shanti.png';
-import project3 from '../../Assets/Images/Shanti.png';
-import project4 from '../../Assets/Images/Shanti.png';
-import project5 from '../../Assets/Images/Shanti.png';
-import project6 from '../../Assets/Images/Shanti.png';
-import project7 from '../../Assets/Images/Shanti.png';
-import project8 from '../../Assets/Images/Shanti.png';
-import project9 from '../../Assets/Images/Shanti.png';
-import project10 from '../../Assets/Images/Shanti.png';
-import project11 from '../../Assets/Images/Shanti.png';
-import project12 from '../../Assets/Images/Shanti.png';
+import project1 from '../../Assets/Images/First Banner.jpg';
+import project2 from '../../Assets/Images/Slider Images/2.jpg';
+import project3 from '../../Assets/Images/Slider Images/3.jpg';
+import project4 from '../../Assets/Images/Slider Images/4.jpg';
+import project5 from '../../Assets/Images/Slider Images/5.jpg';
+import project6 from '../../Assets/Images/Slider Images/6.jpg';
+import project7 from '../../Assets/Images/Slider Images/7.jpg';
+import project8 from '../../Assets/Images/Slider Images/8.jpg';
+import project9 from '../../Assets/Images/Slider Images/9.jpg';
+import project10 from '../../Assets/Images/Slider Images/10.jpg';
+
 
 // Define project data with imported images
 const projects = [
@@ -31,8 +30,6 @@ const projects = [
   { title: 'Luxury Penthouse', location: 'London, UK', description: 'A top-floor penthouse with panoramic views.', image: project8 },
   { title: 'Commercial Complex', location: 'Dubai, UAE', description: 'A futuristic commercial complex in downtown Dubai.', image: project9 },
   { title: 'Suburban Home', location: 'Sydney, Australia', description: 'A spacious suburban family home with modern amenities.', image: project10 },
-  { title: 'Resort Hotel', location: 'Bali, Indonesia', description: 'A tropical resort hotel with luxurious accommodations.', image: project11 },
-  { title: 'Cultural Center', location: 'Berlin, Germany', description: 'A cultural center that blends modern and traditional design.', image: project12 },
 ];
 
 const Portfolio = () => {
