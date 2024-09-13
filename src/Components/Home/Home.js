@@ -17,7 +17,7 @@ import videoSrc1 from './../../Assets/Videos/Avvi Gupta.mp4';
 
 const ImageSlider = () => {
   const images = [
-    // { src: videoSrc, isVideo: true },
+    { src: videoSrc1, isVideo: true },
     { src: img1, title: '', type: 'BABINA BAR', description: ' Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img2, title: '', type: 'ANAND MANGAL', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },
     { src: img3, title: '', type: 'ANURAG SONI PRESENTATION', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/SeeMore', isVideo: false },

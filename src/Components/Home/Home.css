@@ -158,6 +158,8 @@
 }
 .slider .list .item:nth-child(1) .content .title{
     animation-delay: 0.4s !important;
+    margin-top: 60px;
+
 }
 .slider .list .item:nth-child(1) .content .type{
     animation-delay: 0.6s !important;
