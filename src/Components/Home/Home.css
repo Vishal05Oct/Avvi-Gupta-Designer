@@ -38,7 +38,7 @@
 
 .slider .list .item .content .title,
 .slider .list .item .content .type{
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 1.3em;
 }
@@ -164,6 +164,7 @@
 }
 .slider .list .item:nth-child(1) .content .description{
     animation-delay: 0.8s !important;
+    font-weight: 500;
 }
 .slider .list .item:nth-child(1) .content .buttons{
     animation-delay: 1s !important;
