@@ -177,6 +177,7 @@ a{
 }
 .slider .list .item:nth-child(1) .content .description{
     animation-delay: 0.8s !important;
+    font-weight:  700;
 }
 .slider .list .item:nth-child(1) .content .buttons{
     animation-delay: 1s !important;

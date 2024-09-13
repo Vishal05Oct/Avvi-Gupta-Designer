@@ -7,9 +7,7 @@
   }
   
   /* Banner Section */
-  .banner-section {
 
-  }
   
   .banner-image {
     width: 100%;
@@ -23,12 +21,17 @@
   .portfolio-title {
     font-size: 2.5rem;
     margin-bottom: -28px;
+    
+  }
+
+  .portfolio-heading {
+    color: black;
   }
   
   .portfolio-subtitle {
-    font-size: 1.2rem;
-    color: #666;
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: black
   }
   
   /* Grid Layout */
