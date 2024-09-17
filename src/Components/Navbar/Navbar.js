@@ -60,6 +60,15 @@ const Navbar = () => {
                 </li>
                 <li className="offcanvas-nav__item">
                   <Link
+                    to="/Services"
+                    className="offcanvas-nav__link"
+                    onClick={handleLinkClick}
+                  >
+                  Services
+                  </Link>
+                </li>
+                <li className="offcanvas-nav__item">
+                  <Link
                     to="/Our-Portfolio"
                     className="offcanvas-nav__link"
                     onClick={handleLinkClick}

@@ -52,7 +52,7 @@ const SeeMore = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section className="portfolio">
+      <section className="portfolio1">
         <div className="container">
           <h2 className="portfolio-title">Our Works</h2>
           <p className="portfolio-intro">
