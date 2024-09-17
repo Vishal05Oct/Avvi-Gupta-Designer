@@ -1,4 +1,4 @@
-// Portfolio.js
+// Services.js
 import React from 'react';
 import './Services.css'; // Ensure your CSS file is correctly imported
 import Navbar from '../Navbar/Navbar';
@@ -14,7 +14,7 @@ import P6 from '../../Assets/Images/Portfolio/P6.jpg';
 import P7 from '../../Assets/Images/Portfolio/P7.jpg';
 import P8 from '../../Assets/Images/Portfolio/P8.jpg';
 
-const Portfolio = () => {
+const Services = () => {
   const projects = [
     { img: P1, title: 'Concept Design', description: 'Developing initial design ideas and architectural concepts.' },
     { img: P2, title: 'Schematic Design', description: 'Creating detailed plans and drawings for the layout and structure of a project.' },
@@ -41,7 +41,7 @@ const Portfolio = () => {
         <img src={Banner} alt="Portfolio Banner" className="banner-image" />
       </div>
       <div className="container">
-        <h2 className="portfolio-title">Our Works</h2>
+        <h2 className="portfolio-title">Our Services</h2>
         <p className="portfolio-intro">
           Explore some of our most notable projects. Each piece reflects our commitment to architectural excellence and creative design.
         </p>
@@ -63,4 +63,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Services;
