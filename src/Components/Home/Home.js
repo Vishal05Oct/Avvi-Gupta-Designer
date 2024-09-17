@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Home.css'; // Ensure CSS transitions are defined here
 import Navbar from './../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 import img1 from './../../Assets/Images/First Banner.jpg';
 import img2 from './../../Assets/Images/Slider Images/2.jpg';
 import img3 from './../../Assets/Images/Slider Images/3.jpg';
@@ -28,8 +29,8 @@ const ImageSlider = () => {
     { src: img7, title: '', type: 'LA PINOZ', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/project-detail', isVideo: false },
     { src: img8, title: '', type: 'MANOJ JEWELLERS', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/project-detail', isVideo: false },
     { src: img9, title: '', type: 'NANKANI', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/project-detail', isVideo: false },
-    { src: img10, title:'', type: 'OLD TOWN CAFE', description:'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/project-detail', isVideo: false }, 
-   ];
+    { src: img10, title: '', type: 'OLD TOWN CAFE', description: 'Explore the Elegance of Architecture By Avvi Gupta Timeless Design Meets Modern Inspiration Our elegant property features innovative spaces that combine design with functionality, creating refined, upscale environments. Each project is a testament to architecture, enhancing luxury living and redefining design excellence. Each detail is meticulously curated to inspire and leave a lasting impression.', seeMoreLink: '/project-detail', isVideo: false },
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState('');
@@ -49,27 +50,27 @@ const ImageSlider = () => {
     // const thumbnailsWithoutCurrent = images.filter((_, index) => index !== currentIndex);
     // return [...thumbnailsWithoutCurrent, images[currentIndex]];
     // Validate input
-    
+
     // Create a copy of the original list
 
     const list2 = [...images];
-    if (animationDirection === 'next' || animationDirection === ''){
-    // Calculate the effective shift
-    const effectiveShift = (currentIndex + 1) % list2.length;
-    
-    // Perform the shift
-    const shiftedList = list2.slice(effectiveShift).concat(list2.slice(0, effectiveShift));
-    return shiftedList;
-    }
-    else if(animationDirection === 'prev'){
+    if (animationDirection === 'next' || animationDirection === '') {
       // Calculate the effective shift
-    const effectiveShift = (currentIndex + 1) % list2.length;
-    
-    // Perform the shift
-    const shiftedList = list2.slice(effectiveShift).concat(list2.slice(0, effectiveShift));
-    return shiftedList;
+      const effectiveShift = (currentIndex + 1) % list2.length;
+
+      // Perform the shift
+      const shiftedList = list2.slice(effectiveShift).concat(list2.slice(0, effectiveShift));
+      return shiftedList;
     }
-    };
+    else if (animationDirection === 'prev') {
+      // Calculate the effective shift
+      const effectiveShift = (currentIndex + 1) % list2.length;
+
+      // Perform the shift
+      const shiftedList = list2.slice(effectiveShift).concat(list2.slice(0, effectiveShift));
+      return shiftedList;
+    }
+  };
 
   const thumbnails = getThumbnails();
 
@@ -105,9 +106,9 @@ const ImageSlider = () => {
               <div className="description">{images[currentIndex].description}</div>
               {!images[currentIndex].isVideo && (
                 <div className="see-more">
-                  <a href={images[currentIndex].seeMoreLink} className="see-more-btn">
+                  <Link to={images[currentIndex].seeMoreLink} className="see-more-btn">
                     SEE MORE
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
