@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'; // Ensure CSS transitions are defined here
 import Navbar from './../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 import img1 from './../../Assets/Images/First Banner.jpg';
 import img2 from './../../Assets/Images/Slider Images/2.jpg';
@@ -46,12 +45,6 @@ const ImageSlider = () => {
   };
 
   const getThumbnails = () => {
-    // console.log(currentIndex)
-    // const thumbnailsWithoutCurrent = images.filter((_, index) => index !== currentIndex);
-    // return [...thumbnailsWithoutCurrent, images[currentIndex]];
-    // Validate input
-
-    // Create a copy of the original list
 
     const list2 = [...images];
     if (animationDirection === 'next' || animationDirection === '') {
@@ -139,7 +132,6 @@ const ImageSlider = () => {
           <button className="next" onClick={() => moveSlider('next')}>&gt;</button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
