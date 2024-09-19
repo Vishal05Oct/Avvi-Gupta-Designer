@@ -59,13 +59,13 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="offcanvas-nav__item">
-                  <Link
+                  {/* <Link
                     to="/Services"
                     className="offcanvas-nav__link"
                     onClick={handleLinkClick}
                   >
                   Services
-                  </Link>
+                  </Link> */}
                 </li>
                 <li className="offcanvas-nav__item">
                   <Link
